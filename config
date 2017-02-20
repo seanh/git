@@ -1,0 +1,31 @@
+[core]
+	editor = vim
+	excludesfile = /home/seanh/.config/git/gitignore_global
+
+[user]
+	name = Sean Hammond
+	email = git@snhmnd.fastmail.com
+	signingkey = BACE948C46F9B25E
+[diff]
+    color = true
+	tool = meld
+
+[pager]
+    color = true
+
+[status]
+    color = true
+[color]
+	diff = true
+	status = true
+	branch = true
+[init]
+	templatedir = ~/.config/git/template
+[alias]
+	ctags = !.git/hooks/ctags
+[push]
+	default = matching
+[log]
+    decorate = true
+[commit]
+	gpgsign = true
