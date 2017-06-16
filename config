@@ -29,3 +29,5 @@
     decorate = true
 [commit]
 	gpgsign = true
+[credential]
+	helper = store
