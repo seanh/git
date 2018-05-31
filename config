@@ -30,4 +30,4 @@
 [commit]
 	gpgsign = true
 [credential]
-	helper = store --file ~/.config/git/credentials
+	helper = store
