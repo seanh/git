@@ -7,5 +7,6 @@ Installation
 ------------
 
 ```bash
-git clone https://github.com/seanh/git.git ~/.config/git
+git clone https://github.com/seanh/git.git ~/Projects/git
+ln -s ~/Projects/git ~/.config/git
 ```
