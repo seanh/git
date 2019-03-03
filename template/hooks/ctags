@@ -1,10 +1,8 @@
-#!/bin/sh
+#!/usr/bin/env sh
 set -e
-trap "rm -f .git/tags.$$" EXIT
-ctags --tag-relative -Rf.git/tags.$$ \
-    --exclude=.git \
-    --exclude=node_modules \
-    --exclude=.eggs \
-    --exclude=.tox \
-    --languages=-javascript,sql
-mv .git/tags.$$ .git/tags
+PATH="/usr/bin:$PATH"
+dir="`git rev-parse --git-dir`"
+trap 'rm -f "$dir/$$.tags"' EXIT
+git ls-files | \
+  ctags --tag-relative -L - -f"$dir/$$.tags" --languages=all
+mv "$dir/$$.tags" "$dir/tags"
