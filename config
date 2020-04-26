@@ -8,7 +8,7 @@
 	signingkey = BACE948C46F9B25E
 [diff]
     color = true
-	tool = meld
+	tool = vimdiff
 
 [pager]
     color = true
