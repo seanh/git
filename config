@@ -1,20 +1,17 @@
 [core]
 	editor = vim
-	excludesfile = /home/seanh/.config/git/gitignore_global
-
+	excludesfile = ~/.config/git/gitignore_global
 [user]
 	name = Sean Hammond
-	email = git@snhmnd.fastmail.com
+	email = seanh@users.noreply.github.com
 	signingkey = BACE948C46F9B25E
 [diff]
-    color = true
+	color = true
 	tool = vimdiff
-
 [pager]
-    color = true
-
+	color = true
 [status]
-    color = true
+	color = true
 [color]
 	diff = true
 	status = true
@@ -26,7 +23,7 @@
 [push]
 	default = matching
 [log]
-    decorate = true
+	decorate = true
 [commit]
 	gpgsign = true
 [credential]
